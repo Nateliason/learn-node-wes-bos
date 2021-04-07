@@ -42,7 +42,6 @@ exports.register = async (req, res, next) => {
 
 exports.account = (req, res) => {
     res.render('account', {title: "Edit Your Account"});
-
 }
 
 exports.updateAccount = async (req, res) => { 

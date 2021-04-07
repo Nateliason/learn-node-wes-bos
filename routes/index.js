@@ -50,6 +50,8 @@ router.post('/account/reset/:token',
 router.get('/hearts', authController.isLoggedIn, catchErrors(storeController.getHearts));
 router.post('/reviews/:id', authController.isLoggedIn, catchErrors(reviewController.addReview));
 
+router.get('/top', catchErrors(storeController.getTopStores));
+
 // API
 
 router.get('/api/search', catchErrors(storeController.searchStores));
